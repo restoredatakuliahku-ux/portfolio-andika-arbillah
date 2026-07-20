@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Andika Arbillah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Andika<span class="brand-dot">.</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list text-white fs-3"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificates">Sertifikat</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
+      </ul>
+      <a href="#footer" class="nav-cta">Hire Me <i class="bi bi-arrow-up-right ms-1"></i></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+
+  <!-- Signature: circuit-trace background, echoes the network topologies he installs -->
+  <svg class="hero-circuit-bg" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+    <path class="trace" d="M -20 620 H 260 L 320 560 H 560" />
+    <path class="trace" d="M -20 700 H 160 L 210 650 H 480 L 540 590 H 900" />
+    <path class="trace cy" d="M 1220 120 H 900 L 840 180 H 620" />
+    <path class="trace cy" d="M 1220 220 H 1000 L 950 270 H 700 L 650 320 H 480" />
+    <path class="trace" d="M 1220 40 H 1040 L 990 90 H 820" />
+    <circle class="node" cx="560" cy="560" r="4" />
+    <circle class="node" cx="900" cy="590" r="4" />
+    <circle class="node cy" cx="620" cy="180" r="4" />
+    <circle class="node cy" cx="480" cy="320" r="4" />
+    <circle class="node" cx="820" cy="90" r="4" />
+  </svg>
+
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="row align-items-center min-vh-100 py-5">
+
+      <!-- Right: Bubble Image (mobile: order-1 = tampil pertama) -->
+      <div class="col-lg-6 col-md-12 hero-img-wrap order-1 order-lg-2">
+        <div class="bubble-ring"></div>
+        <div class="bubble-clip">
+          <img src="assets/hero.png" alt="Andika Arbillah" />
+        </div>
+        <span class="bubble-node" style="top:8%; left:2%;"></span>
+        <span class="bubble-node" style="bottom:10%; right:0%;"></span>
+      </div>
+
+      <!-- Left: Description (mobile: order-2 = tampil kedua) -->
+      <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+        <span class="hero-badge"><span class="dot"></span> Open to Opportunities</span>
+        <h1 class="hero-title mt-2">
+          Halo, Saya<br>
+          <span class="highlight">Andika Arbillah</span>
+        </h1>
+        <p class="hero-typed-line">
+          &gt; <span id="typed"></span><span class="caret">|</span>
+        </p>
+        <p class="hero-desc mt-3">
+          Mahasiswa Informatika yang passionate di bidang pengembangan web full-stack dan jaringan komputer.
+          Berpengalaman dalam membangun aplikasi modern dengan teknologi terkini, serta memiliki keahlian di bidang instalasi jaringan dan infrastruktur IT.
+        </p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <a href="#projects" class="btn-orange">Lihat Proyek <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="#footer" class="btn-outline-orange">Hubungi Saya</a>
+        </div>
+
+        <!-- Tech Stack Scroll -->
+        <div class="mt-4">
+          <p class="stack-label">Tech Stack</p>
+          <div class="techstack-scroll">
+            <span class="ts-badge">PostgreSQL</span>
+            <span class="ts-badge">MySQL</span>
+            <span class="ts-badge">HTML</span>
+            <span class="ts-badge">CSS</span>
+            <span class="ts-badge">JavaScript</span>
+            <span class="ts-badge">Bootstrap</span>
+            <span class="ts-badge">Tailwind CSS</span>
+            <span class="ts-badge">PHP</span>
+            <span class="ts-badge">Laravel</span>
+            <span class="ts-badge">React</span>
+            <span class="ts-badge">Next.js</span>
+            <span class="ts-badge">Express.js</span>
+            <span class="ts-badge">Golang</span>
+          </div>
+        </div>
+
+        <!-- Network Skills Scroll -->
+        <div class="mt-3">
+          <p class="stack-label">Keahlian Jaringan</p>
+          <div class="techstack-scroll">
+            <span class="ts-badge ts-net">Topology Enterprise</span>
+            <span class="ts-badge ts-net">Instalasi Jaringan</span>
+            <span class="ts-badge ts-net">Instalasi CCTV</span>
+            <span class="ts-badge ts-net">Instalasi Server</span>
+            <span class="ts-badge ts-net">Troubleshooting</span>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">2+</div>
+            <div class="hero-stat-label">Pengalaman Magang</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">13+</div>
+            <div class="hero-stat-label">Tech Stack</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">3.87</div>
+            <div class="hero-stat-label">IPK</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5 reveal">
+        <span class="section-tag">Perjalanan Akademik</span>
+        <h2 class="section-title mt-1">Jenjang <span>Pendidikan</span></h2>
+        <div class="circuit-divider mx-auto"><span class="seg"></span><span class="node"></span><span class="seg rev"></span></div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2022 – 2026</span>
+              <h5 class="fw-bold mb-1">S1 Informatika</h5>
+              <p class="timeline-school mb-1"><i class="bi bi-building me-1"></i> Institut Teknologi Insan Cendekia Mandiri — Sidoarjo, Jawa Timur</p>
+              <p class="mb-0" style="font-size:.88rem; color:#555;">
+                Fokus pada pengembangan perangkat lunak, rekayasa sistem, dan jaringan komputer. Lulus dengan IPK <strong>3.87</strong>/4.00.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2019 – 2022</span>
+              <h5 class="fw-bold mb-1">SMK – Agrobisnis Pengolahan Hasil Pertanian</h5>
+              <p class="timeline-school mb-1"><i class="bi bi-building me-1"></i> SMK Negeri 7 Technopreneur Merdeka Kaur</p>
+              <p class="mb-0" style="font-size:.88rem; color:#555;">
+                Mempelajari pengolahan hasil pertanian berbasis teknologi dan kewirausahaan digital.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2017 – 2019</span>
+              <h5 class="fw-bold mb-1">SMP</h5>
+              <p class="timeline-school mb-1"><i class="bi bi-building me-1"></i> SMP Negeri 22 Satu Atap Kaur</p>
+              <p class="mb-0" style="font-size:.88rem; color:#555;">
+                Menempuh pendidikan dasar menengah dan mulai mengenal dunia teknologi informasi.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Map Visual -->
+      <div class="col-lg-4 reveal">
+        <div class="map-card">
+          <h6 class="fw-bold mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Lokasi Studi</h6>
+          <div style="border-radius:10px; overflow:hidden; height:280px;">
+            <iframe
+              src="https://www.openstreetmap.org/export/embed.html?bbox=112.6806%2C-7.4318%2C112.6836%2C-7.4297&layer=mapnik&marker=-7.430740%2C112.681647"
+              width="100%" height="100%" style="border:0;" loading="lazy"
+              title="Peta Lokasi Kampus">
+            </iframe>
+          </div>
+          <p class="mt-3 mb-1" style="font-size:.85rem; color:#888;">
+            <i class="bi bi-pin-map me-1" style="color:var(--accent)"></i>
+            Sarirogo, Sidoarjo, Jawa Timur
+          </p>
+          <p class="mb-0" style="font-size:.8rem; color:#aaa;">Institut Teknologi Insan Cendekia Mandiri</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CERTIFICATES ── -->
+<section id="certificates">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-tag">Pencapaian</span>
+      <h2 class="section-title mt-1">Sertifikat <span>& Lisensi</span></h2>
+      <div class="circuit-divider mx-auto"><span class="seg"></span><span class="node cy"></span><span class="seg rev"></span></div>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-lg-3 col-md-6 reveal">
+        <div class="cert-card">
+          <div class="cert-icon">📹</div>
+          <p class="cert-issuer">Hikvision</p>
+          <h6 class="fw-bold">HTC – Smart Building Industries</h6>
+          <p class="cert-year"><i class="bi bi-calendar3 me-1"></i>Hikvision Certification Program</p>
+          <a href="assets/sertifcation/htc-smart-building-industries.jpg" target="_blank" class="btn-orange">Lihat Sertifikat</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 reveal">
+        <div class="cert-card">
+          <div class="cert-icon">🎓</div>
+          <p class="cert-issuer">Hikvision</p>
+          <h6 class="fw-bold">HTC – Education</h6>
+          <p class="cert-year"><i class="bi bi-calendar3 me-1"></i>Hikvision Certification Program</p>
+          <a href="assets/sertifcation/htc-education.jpg" target="_blank" class="btn-orange">Lihat Sertifikat</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 reveal">
+        <div class="cert-card">
+          <div class="cert-icon">🐹</div>
+          <p class="cert-issuer">Enigma Camp</p>
+          <h6 class="fw-bold">Golang Programmer</h6>
+          <p class="cert-year"><i class="bi bi-calendar3 me-1"></i>IT Boot Camp & Talent Management</p>
+          <a href="assets/sertifcation/golang-programmer.pdf" target="_blank" class="btn-orange">Lihat Sertifikat</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 reveal">
+        <div class="cert-card">
+          <div class="cert-icon">🌐</div>
+          <p class="cert-issuer">Ruijie Networks</p>
+          <h6 class="fw-bold">Reyee Specialist Engineer (SME Product)</h6>
+          <p class="cert-year"><i class="bi bi-calendar3 me-1"></i>Ruijie Certification</p>
+          <a href="assets/sertifcation/ruijee-sertification.pdf" target="_blank" class="btn-orange">Lihat Sertifikat</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-tag">Karir</span>
+      <h2 class="section-title mt-1">Pengalaman <span>Kerja</span></h2>
+      <div class="circuit-divider mx-auto"><span class="seg"></span><span class="node cy"></span><span class="seg rev"></span></div>
+    </div>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-lg-6 reveal">
+        <div class="exp-card">
+          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+            <div>
+              <span class="exp-type-badge">Volunteer</span>
+              <h5 class="exp-title mb-0 mt-1">Volunteer</h5>
+              <p class="exp-company mb-0">Yayasan Yatim Mandiri</p>
+            </div>
+            <span class="exp-period"><i class="bi bi-calendar3 me-1"></i>2023</span>
+          </div>
+          <p class="exp-desc mb-3">
+            Berpartisipasi aktif sebagai relawan dalam kegiatan sosial dan pemberdayaan anak yatim.
+            Membantu koordinasi kegiatan dan dokumentasi program yayasan.
+          </p>
+          <div>
+            <span class="exp-tag">Sosial</span>
+            <span class="exp-tag">Koordinasi</span>
+            <span class="exp-tag">Dokumentasi</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 reveal">
+        <div class="exp-card">
+          <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
+            <div>
+              <span class="exp-type-badge cy">Magang</span>
+              <h5 class="exp-title mb-0 mt-1">Teknisi Lapangan</h5>
+              <p class="exp-company mb-0">PT Bitmatic Inovasi Teknologi</p>
+            </div>
+            <span class="exp-period"><i class="bi bi-calendar3 me-1"></i>2024</span>
+          </div>
+          <p class="exp-desc mb-3">
+            Melakukan instalasi dan konfigurasi jaringan, server, serta CCTV di lapangan.
+            Menangani troubleshooting infrastruktur IT dan memastikan sistem berjalan optimal.
+          </p>
+          <div>
+            <span class="exp-tag">Instalasi Jaringan</span>
+            <span class="exp-tag">CCTV</span>
+            <span class="exp-tag">Server</span>
+            <span class="exp-tag">Troubleshooting</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-tag">Portofolio</span>
+      <h2 class="section-title mt-1">Proyek <span>Unggulan</span></h2>
+      <div class="circuit-divider mx-auto"><span class="seg"></span><span class="node"></span><span class="seg rev"></span></div>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6 reveal">
+        <div class="project-card">
+          <div class="project-img project-img-cover">
+            <img src="assets/projects/gpia-net.jpeg" alt="Sistem Informasi Gereja GPIA" />
+          </div>
+          <div class="project-body">
+            <h5 class="project-title">Sistem Informasi Gereja</h5>
+            <p class="project-desc">Website sistem informasi gereja lengkap dengan manajemen jemaat, kegiatan, dan administrasi berbasis Laravel Filament.</p>
+            <div class="mb-3">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Filament</span>
+              <span class="project-tag">Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://gpia.net" target="_blank"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 reveal">
+        <div class="project-card">
+          <div class="project-img project-img-cover">
+            <img src="assets/projects/wasesokencana.png" alt="CMS CV Waseso Kencana" />
+          </div>
+          <div class="project-body">
+            <h5 class="project-title">CMS CV Waseso Kencana</h5>
+            <p class="project-desc">Website company profile dengan CMS custom untuk CV Waseso Kencana, memudahkan pengelolaan konten secara mandiri.</p>
+            <div class="mb-3">
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">Filament</span>
+              <span class="project-tag">Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://wasesokencana.id" target="_blank"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 reveal">
+        <div class="project-card">
+          <div class="project-img project-img-cover">
+            <img src="assets/projects/sakura.png" alt="SAKURA - Sistem Manajemen Informasi RT" />
+          </div>
+          <div class="project-body">
+            <h5 class="project-title">SAKURA <span class="project-wip">In Development</span></h5>
+            <p class="project-desc">Sistem Manajemen Informasi RT untuk Perumahan Sakura — mengelola data warga, pengumuman, iuran, dan administrasi lingkungan secara digital.</p>
+            <div class="mb-3">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">Express.js</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/restoredatakuliahku-ux" target="_blank"><i class="bi bi-github me-1"></i>GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 reveal">
+        <div class="project-card">
+          <div class="project-img project-img-cover">
+            <img src="assets/projects/axia-hotel-south-cikarang.png" alt="CMS Hotel Axia South Cikarang" />
+          </div>
+          <div class="project-body">
+            <h5 class="project-title">CMS Hotel Axia South Cikarang</h5>
+            <p class="project-desc">Website CMS multi bahasa untuk Hotel Axia South Cikarang — mendukung pengelolaan konten dalam berbagai bahasa untuk menjangkau tamu internasional.</p>
+            <div class="mb-3">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Tailwind CSS</span>
+              <span class="project-tag">shadcn/ui</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer id="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <div class="footer-name">Andika<span>.</span></div>
+        <p class="footer-desc mt-2">
+          Terbuka untuk peluang baru, kolaborasi, dan proyek menarik.<br>
+          Mari wujudkan ide bersama!
+        </p>
+        <p class="footer-contact mt-3">
+          <i class="bi bi-envelope-fill me-2" style="color:var(--accent)"></i>chrandika3@gmail.com<br>
+          <i class="bi bi-whatsapp me-2" style="color:var(--accent)"></i>+62 851-6985-4711<br>
+          <i class="bi bi-geo-alt-fill me-2" style="color:var(--accent)"></i>Sidoarjo, Jawa Timur
+        </p>
+      </div>
+      <div class="col-lg-3 mb-4 mb-lg-0">
+        <h6 class="text-white fw-bold mb-3">Navigasi</h6>
+        <ul class="list-unstyled" style="color:#555;">
+          <li class="mb-2"><a href="#hero" style="color:#7d8699; text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#7d8699'">Home</a></li>
+          <li class="mb-2"><a href="#education" style="color:#7d8699; text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#7d8699'">Pendidikan</a></li>
+          <li class="mb-2"><a href="#certificates" style="color:#7d8699; text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#7d8699'">Sertifikat</a></li>
+          <li class="mb-2"><a href="#experience" style="color:#7d8699; text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#7d8699'">Pengalaman</a></li>
+          <li class="mb-2"><a href="#projects" style="color:#7d8699; text-decoration:none;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='#7d8699'">Proyek</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="text-white fw-bold mb-3">Temukan Saya Di</h6>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <a href="https://github.com/restoredatakuliahku-ux" target="_blank" class="social-link" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/andika-arbillah-a3b56b2a6/" target="_blank" class="social-link" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/andika_arbillah/" target="_blank" class="social-link" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://wa.me/6285169854711" target="_blank" class="social-link" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <a href="mailto:chrandika3@gmail.com" class="btn-orange" style="font-size:.9rem;">
+          <i class="bi bi-send-fill me-2"></i>Kirim Pesan
+        </a>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="text-center footer-copy">
+      © 2025 <span>Andika Arbillah</span>. Dibuat dengan <span>♥</span> menggunakan Bootstrap 5.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
